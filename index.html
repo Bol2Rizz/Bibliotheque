@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ma bibliothèque</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>Ma bibliothèque personnelle</h1>
+      <div id="formulaire">
+        <input type="text" id="titre" placeholder="Titre" />
+        <input type="text" id="auteur" placeholder="Auteur" />
+        <input type="text" id="genre" placeholder="Genre" />
+        <select id="statut">
+          <option value="non lu">Non lu</option>
+          <option value="en cours">En cours</option>
+          <option value="terminé">Terminé</option>
+        </select>
+        <textarea id="commentaire" placeholder="Commentaire"></textarea>
+        <button id="ajouter">Ajouter</button>
+      </div>
+
+      <div id="recherche">
+        <input
+          type="text"
+          id="rechercher"
+          placeholder="Rechercher un titre..."
+        />
+      </div>
+
+      <div id="vue">
+        <button id="vueGrille">Grille</button>
+        <button id="vueListe">Liste</button>
+      </div>
+
+      <div id="listeLivres"></div>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
